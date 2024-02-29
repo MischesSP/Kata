@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: url(Fonts/TTLakes-Bold.woff);
+}
+
+body {
+    font-family: "TT Lakes", sans-serif;
+    background: #F8F8F8;
+}
+.header {
+    height: 88px;
+}
+
+.header-container {
+    width: 320px;
+    height: 88px;
+    margin: 0 auto;
+    border-bottom: solid #D9FFF5;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+.button {
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+}
+
+
+.button-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 288px;
+    margin: 0 auto;
+}
+
+.title {
+    background-image: url(/img/highlight.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6000000238418579px;
+}
+
+.Menu {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    Display: inline-flex;
+    justify-content: space-evenly;
+    color: #7E7E82;
+}
+
+.info{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+.info-container {
+    width: 288px;
+}
+
+.ReadMore {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+}
+
+.picture {
+    margin: 0 auto;
+    background-image: url(/img/Picture\ Copy.png);
+    width: 320px;
+    height: 176px;
+    top: 386px;
+}
