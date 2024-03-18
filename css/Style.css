@@ -1,33 +1,23 @@
 body {
     margin: 0;
 }
-@media screen and (max-width: 768px) {
-    
 
-.header-container {
-    width: 320px;
+.header__container {
     height: 88px;
     margin: 0 auto;
     border-bottom: solid #D9FFF5;
 }
 
-.header-line {
+.header__line {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     height: 88px;
 }
 
-.repairFull,
-.checkFull {
-    display: none;
-}
-
-.button-burger,
-.button-repair,
-.button-check {
+.header__button {
     border-radius: 20px;
     width: 40px;
     height: 40px;
@@ -35,102 +25,60 @@ body {
     background-color: #FF3E79;
 }
 
-.button-call,
-.button-chat,
-.button-profile,
-.space {
-    display: none;
-}
-
-.button-burger:hover,
-.button-repair:hover,
-.button-check:hover {
-    background-color: #a7284e;
-}
-
-.button-burger:active,
-.button-repair:active,
-.button-check:active {
-    background-color: #FF3E79;
-    box-shadow: 0 0 10px #FF3E79;
-}
-
-.dividerFirst {
-    background-image: url(/img/divider.svg);
-    width: 2px;
+.header__divider {
+    border: 1px solid #EAEAEA;
     height: 32px;
 }
 
-.dividerSecond {
-    display:none
-}
-
 .container {
-    width: 320px;
-    height: 509px;
+    height: 560px;
     margin: 0 auto;
     background: #F8F8F8;
 }
 
-.title {
-    font-family: "TTLakesBold";
-    width: 304px;
-    height: 40px;
-    display: inline-flex;
-    justify-content: left;
-    padding-top: 24px;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.6000000238418579px;
-}
-
-.title::before {
+.container__title::before {
     content: url(/img/highlight.svg);
     padding-right: 12px;
 }
 
-.spaceFull,
-.button-repairFull,
-.button-checkFull {
-    display: none;
-}
-
 .menu {
-    font-family: "TTlakesmedium";
     display: flex;
     align-items: center;
     white-space: nowrap;
     overflow: auto;
-    width: 300px;
-    font-size: 16px;
-    line-height: 24px;
+    scrollbar-width: none;
     padding-top: 24px;
     padding-left: 16px;
+}
+
+.menu__text {
+    font-family: "TTlakesmedium";
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: -0.20000000298023224px;
     color: #7E7E82;
-}
-
-.menu-text {
     flex: 1 1 auto;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     padding: 4px;
+    border: 0;
+    background-color: transparent;
 }
 
-.menu-text:hover {
+.menu__text:hover {
     background-color: #ffffff;
     border-radius: 6px;
     outline: 2px solid #B8FFEC
     
 }
 
-.menu-text:active {
+.menu__text:active {
     background-color: #ffffff;
     border-radius: 6px;
     outline: 2px solid #B8FFEC;
     box-shadow: 0 0 10px #B8FFEC;
 }
 
-.info-container{
+.info__container {
     font-family: "TTlakesmedium";
     width: 320px;
     padding-top: 14px;
@@ -138,87 +86,106 @@ body {
 }
 
 .info-text {
+    width:288px;
+    height: 115px;
     overflow: hidden;
-    font-family: "TTlakesmedium";
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
-    width: 288px;
-    height: 90px;
-    
-}
-.text {
     padding-left: 16px;
-}
-
-.fulltext {
-    display: none;
-}
-
-.info-ReadMore {
-    font-family: "TTlakesmedium";
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 132px;
-    height: 24px;
-    top: 346px;
-    padding-left: 16px;
-    padding-right: 8px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.20000000298023224px;
-    text-align: left;
-}
-
-.info-button {
-    width: 24px;
-    height: 24px;
-    border: 0;
-    background-color: transparent;
 }
 
 .picture {
-    margin: 0 auto;
-    background-image: url(/img/Picture\ Copy.svg);
     width: 320px;
     height: 176px;
 }
-}
+@media screen and (max-width: 768px) {
+    
+    .container__title {
+        font-family: "TTLakesBold";
+        width: 304px;
+        height: 40px;
+        display: inline-flex;
+        justify-content: left;
+        padding-top: 24px;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6000000238418579px;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 1119px) {
-    .header-container {
-        width: 768px;
-        height: 88px;
-        margin: 0 auto;
-        border-bottom: solid #D9FFF5;
+    .info-ReadMore {
+        font-family: "TTlakesmedium";
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 132px;
+        height: 24px;
+        top: 346px;
+        padding-left: 16px;
+        padding-right: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        text-align: left;
     }
     
-    .header-line {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 24px;
-        margin-right: 24px;
-        height: 88px;
+    .info-button {
+        width: 24px;
+        height: 24px;
+        border: 0;
+        background-color: transparent;
     }
-
-    .space{
-        flex-grow: 0.6;
-    }
-
-    .repairFull,
-    .checkFull {
+    
+    .container__repair,
+    .container__check {
     display: none;
     }
 
-    .button-burger,
-    .button-repair,
-    .button-check,
-    .button-call,
-    .button-chat,
-    .button-profile {
+    .header__button--call,
+    .header__button--chat,
+    .header__button--profile,
+    .header__space {
+    display: none;
+    }
+
+    .container__space,
+    .container__button--repair,
+    .container__button--check {
+    display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .header__line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 88px;
+    }
+
+    .header__logo::before {
+        border: 1px solid #EAEAEA;
+        height: 32px;
+    }
+    .header__divider {
+        display: none;
+    }
+
+    .header__space {
+        flex-grow: 0.6;
+    }
+
+    .container__repair,
+    .container__check {
+    display: none;
+    }
+
+    .header__button--call,
+    .header__button--chat,
+    .header__button--profile {
         border-radius: 20px;
         width: 40px;
         height: 40px;
@@ -226,39 +193,18 @@ body {
         background-color: #FF3E79;
     }
 
-    .button-burger:hover,
-    .button-repair:hover,
-    .button-check:hover,
-    .button-call:hover,
-    .button-chat:hover,
-    .button-profile:hover {
-        background-color: #a7284e;
-    }
-    
-    .button-burger:active,
-    .button-repair:active,
-    .button-check:active,
-    .button-call:active,
-    .button-chat:active,
-    .button-profile:active {
-        background-color: #FF3E79;
-        box-shadow: 0 0 10px #FF3E79;
-    }
-
-    .dividerFirst,
-    .dividerSecond {
-        background-image: url(/img/divider.svg);
-        width: 2px;
+    .header__button--profile::after {
+        border: 1px solid #EAEAEA;
         height: 32px;
     }
+
     .container {
-        width: 768px;
         height: 416px;
         margin: 0 auto;
         background: #F8F8F8;
     }
     
-    .title {
+    .container__title {
         font-family: "TTLakesBold";
         width: 257px;
         height: 40px;
@@ -269,53 +215,23 @@ body {
         line-height: 40px;
         letter-spacing: -0.6000000238418579px;
     }
-    
-    .title::before {
-        content: url(/img/highlight.svg);
-        padding-right: 12px;
-    }
 
-    .spaceFull,
-    .button-repairFull,
-    .button-checkFull {
+    .container__space,
+    .container__button--repair,
+    .container__button--check {
     display: none;
     }
 
     .menu {
-        font-family: "TTlakesmedium";
         display: flex;
         align-items: center;
         white-space: nowrap;
         overflow: auto;
-        width: 740px;
-        font-size: 16px;
-        line-height: 24px;
+        scrollbar-width: none;
         padding-top: 32px;
         padding-left: 24px;
-        letter-spacing: -0.20000000298023224px;
-        color: #7E7E82;
     }
-    
-    .menu-text {
-        flex: 1 1 auto;
-        margin-bottom: 10px;
-        padding: 4px;
-    }
-    
-    .menu-text:hover {
-        background-color: #ffffff;
-        border-radius: 6px;
-        outline: 2px solid #B8FFEC
-        
-    }
-    
-    .menu-text:active {
-        background-color: #ffffff;
-        border-radius: 6px;
-        outline: 2px solid #B8FFEC;
-        box-shadow: 0 0 10px #B8FFEC;
-    }
-    
+ 
     .info {
         width: 769px;
         height: 208px;
@@ -323,33 +239,21 @@ body {
         display: flex;
         justify-content: space-between;
     }
-    .info-container {
+    
+    .info__container {
         font-family: "TTlakesmedium";
         width: 320px;
         height: 208px;
-        
     }
     
     .info-text {
-        width: 320px;
-        height: 208px;
+        width: 312px;
+        height: 173px;
+        padding-left: 25px;
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.20000000298023224px;
         text-align: left;
-    }
-    
-    .text {
-        width: 312px;
-        padding-left: 24px;
-        margin-top: 0px;
-    }
-
-    .fulltext {
-        width: 312px;
-        height: 40px;
-        overflow: hidden;
-        padding-left: 24px;
     }
     
     .info-ReadMore {
@@ -376,12 +280,10 @@ body {
     
     .picture {
         align-items: center;
-        background-image: url(/img/Picture\ Copy.svg);
-        background-repeat: no-repeat;
         width: 320px;
         height: 175px;
         border-radius: 10px 0 0 10px;
-        margin-right: 24px;
+        padding-right: 24px;
     }
 }
 
@@ -390,12 +292,14 @@ body {
     header {
         display: none
     }
+
     .container {
+        width: 1120px;
         margin: 0 auto;
         background: #F8F8F8;
     }
     
-    .title {
+    .container__title {
         font-family: "TTLakesBold";
         display: flex;
         justify-content: space-between;
@@ -404,18 +308,19 @@ body {
         font-size: 28px;
         line-height: 40px;
         letter-spacing: -0.6000000238418579px;
-        margin-right: 32px;
+        padding-right: 32px;
     }
     
-    .title::before {
+    .container__title::before {
         content: url(/img/highlight.svg);
     }
-    .spaceFull {
+
+    .container__space {
         flex-grow: 0.7;
     }
 
-    .repairFull,
-    .checkFull {
+    .container__repair,
+    .container__check {
         font-family: "TTlakesmedium";
         font-size: 16px;
         line-height: 24px;
@@ -424,12 +329,8 @@ body {
         
     }
 
-    .button-repairFull {
-        margin-right: 160px;
-    }
-
-    .button-repairFull,
-    .button-checkFull {
+    .container__button--repair,
+    .container__button--check {
         border-radius: 20px;
         width: 40px;
         height: 40px;
@@ -438,36 +339,13 @@ body {
     }
 
     .menu {
-        font-family: "TTlakesmedium";
+        width: 1063px;
+        height: 82px;
         display: flex;
-        align-items: center;
+        justify-content: left;
+        align-items: flex-start;
         white-space: nowrap;
-        overflow: auto;
-        font-size: 16px;
-        line-height: 24px;
         padding-left: 24px;
-        letter-spacing: -0.20000000298023224px;
-        color: #7E7E82;
-    }
-    
-    .menu-text {
-        flex: 1 1 auto;
-        margin-bottom: 10px;
-        padding: 4px;
-    }
-    
-    .menu-text:hover {
-        background-color: #ffffff;
-        border-radius: 6px;
-        outline: 2px solid #B8FFEC
-        
-    }
-    
-    .menu-text:active {
-        background-color: #ffffff;
-        border-radius: 6px;
-        outline: 2px solid #B8FFEC;
-        box-shadow: 0 0 10px #B8FFEC;
     }
     
     .info {
@@ -477,28 +355,20 @@ body {
         display: flex;
         justify-content: space-between;
     }
-    .info-container {
+
+    .info__container {
         flex-grow: 0.9;
         font-family: "TTlakesmedium";
     }
     
     .info-text {
+        width: auto;
+        height: auto;
         flex-grow: 0.9;
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.20000000298023224px;
         text-align: left;
-    }
-    
-    .text {
-        width: 490px;
-        padding-left: 24px;
-        margin-top: 0px;
-    }
-
-    .fulltext {
-        width: 490px;
-        height: 40px;
         padding-left: 24px;
     }
     
@@ -524,36 +394,25 @@ body {
     
     .picture {
         align-items: center;
-        background-image: url(/img/PictureFull.svg);
         background-repeat: no-repeat;
         width: 531px;
         height: 307px;
         border-radius: 10px 0 0 10px;
-        margin-right: 24px;
+        padding-right: 24px;
     }
 }
     
 @font-face {
     font-family: "TTLakesLight";
-    src: url(/Fonts/TTLakes-Light.ttf) format("ttf");
     src: url(/Fonts/TTLakes-Light.woff) format("woff");
-    src: url(/Fonts/TTLakes-Light.eot) format("eot");
 }
 
 @font-face {
     font-family: "TTLakesMedium";
-    src: url(/Fonts/TTLakes-Regular.ttf) format("ttf");
     src: url(/Fonts/TTLakes-Regular.woff) format("woff");
-    src: url(/Fonts/TTLakes-Regular.eot) format("eot");
-    font-style: normal; 
-    font-weight: normal;
 }
 
 @font-face {
     font-family: "TTLakesBold";
-    src: url(/Fonts/TTLakes-Bold.ttf) format("ttf");
     src: url(/Fonts/TTLakes-Bold.woff) format("woff");
-    src: url(/Fonts/TTLakes-Bold.eot) format("eot");
-    font-style: normal; 
-    font-weight: normal;
 }
