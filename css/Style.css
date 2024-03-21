@@ -16,19 +16,19 @@ body {
 }
 
 .header__button--burger {
-    background-image: url(img/icon1.svg);
+    background-image: url(/Kata/img/icon1.svg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .header__button--repair {
-    background-image: url(img/icon3.svg);
+    background-image: url(/Kata/img/icon3.svg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .header__button--check {
-    background-image: url(img/icon2.svg);
+    background-image: url(/Kata/img/icon2.svg);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .container__title::before {
-    content: url(img/highlight.svg);
+    content: url(/Kata/img/highlight.svg);
     padding-right: 12px;
 }
 
@@ -122,7 +122,7 @@ body {
 }
 
 .info-button::before {
-    content: url(img/icon\ readmore.svg);
+    content: url(/Kata/img/icon\ readmore.svg);
 }
 
 @media screen and (max-width: 768px) {
@@ -211,19 +211,19 @@ body {
     }
 
     .header__button--call {
-        background-image: url(img/call.svg);
+        background-image: url(/Kata/img/call.svg);
         background-repeat: no-repeat;
         background-position: center center;
     }
 
     .header__button--chat {
-        background-image: url(img/Chat.svg);
+        background-image: url(/Kata/img/Chat.svg);
         background-repeat: no-repeat;
         background-position: center center;
     }
 
     .header__button--profile {
-        background-image: url(img/Profile.svg);
+        background-image: url(/Kata/img/Profile.svg);
         background-repeat: no-repeat;
         background-position: center center;
     }
@@ -329,7 +329,7 @@ body {
     }
     
     .container__title::before {
-        content: url(img/highlight.svg);
+        content: url(/Kata/img/highlight.svg);
     }
 
     .container__space {
@@ -347,13 +347,13 @@ body {
     }
 
     .container__button--repair{
-        background-image: url(img/icon3.svg);
+        background-image: url(/Kata/img/icon3.svg);
         background-repeat: no-repeat;
         background-position: center center;
     }
 
     .container__button--check{
-        background-image: url(img/icon2.svg);
+        background-image: url(/Kata/img/icon2.svg);
         background-repeat: no-repeat;
         background-position: center center;
     }
@@ -405,15 +405,15 @@ body {
     
 @font-face {
     font-family: "TTLakesLight";
-    src: url(Fonts/TTLakes-Light.woff) format("woff");
+    src: url(/Kata/Fonts/TTLakes-Light.woff) format("woff");
 }
 
 @font-face {
     font-family: "TTLakesMedium";
-    src: url(Fonts/TTLakes-Regular.woff) format("woff");
+    src: url(/Kata/Fonts/TTLakes-Regular.woff) format("woff");
 }
 
 @font-face {
     font-family: "TTLakesBold";
-    src: url(Fonts/TTLakes-Bold.woff) format("woff");
+    src: url(/Kata/Fonts/TTLakes-Bold.woff) format("woff");
 }
