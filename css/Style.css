@@ -122,7 +122,7 @@ body {
 }
 
 .info-button::before {
-    content: url(/Kata/img/icon\ readmore.svg);
+    content: url(/Kata/img/iconReadmore.svg);
 }
 
 @media screen and (max-width: 768px) {
